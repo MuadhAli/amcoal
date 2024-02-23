@@ -1,0 +1,574 @@
+/********** Template CSS **********/
+:root {
+    --primary: #7a6d6d;
+    --secondary: #FF4917;
+    --light: #EDF1FC;
+    --dark: #17224D;
+}
+
+.fw-medium {
+    font-weight: 600 !important;
+}
+
+
+/* ============= HEADING STYLE ==================== */
+@import url(https://fonts.googleapis.com/css?family=Arimo);
+.styled-h1{
+    color: teal;
+    font-family: 'Arimo';
+}
+
+
+
+/*** Header ***/
+.header-carousel .container,
+.page-header .container {
+    position: relative;
+    padding: 45px 0 45px 35px;
+    border-left: 15px solid #fff;
+
+}
+
+.header-carousel .container::before,
+.header-carousel .container::after,
+.page-header .container::before,
+.page-header .container::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 15px;
+    background: #fff;
+}
+
+.header-carousel .container::after,
+.page-header .container::after {
+    top: 100%;
+    margin-top: -15px;
+}
+
+@media (max-width: 768px) {
+    .header-carousel .owl-carousel-item {
+        position: relative;
+        min-height: 500px;
+    }
+
+    .header-carousel .owl-carousel-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .header-carousel .owl-carousel-item h5,
+    .header-carousel .owl-carousel-item p {
+        font-size: 12px !important;
+        font-weight: 400 !important;
+    }
+
+    .header-carousel .owl-carousel-item h1 {
+        font-size: 20px !important;
+    }
+
+
+    .header-carousel .owl-carousel-item h1 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+}
+
+.header-carousel .owl-carousel-item h5 {
+    border: 2px solid #fff;
+    display: inline-block;
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+.active_caro {
+    background: #aa1712;
+}
+
+
+.header-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    right: 8%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.header-carousel .owl-nav .owl-prev,
+.header-carousel .owl-nav .owl-next {
+    margin: 7px 0;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 45px;
+    font-size: 22px;
+    transition: .5s;
+}
+
+.header-carousel .owl-nav .owl-prev:hover,
+.header-carousel .owl-nav .owl-next:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: var(--light);
+}
+
+
+
+
+
+
+
+/* topone */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.top-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-content,
+.image-content {
+    width: 100%;
+    padding: 20px;
+    text-align: justify;
+}
+
+.image-content {
+    width: 100%;
+    height: 600px;
+    /* Adjust the desired height here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toponeimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* This property maintains the aspect ratio while filling the container */
+}
+
+
+
+.toponeimg {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+}
+
+@media (min-width: 768px) {
+    .content-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .text-content,
+    .image-content {
+        width: 50%;
+    }
+
+    .text-content {
+        padding-right: 40px;
+    }
+}
+
+
+ /* ======== top section satellite ===== */
+ 
+
+
+/* =========== TOP TWO =============== */
+
+.toptwo {
+    display: flex;
+    flex-basis: 65%;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /* To prevent shadow overflow */
+}
+
+.toptwo img {
+    max-width: 100%;
+    max-height: 500px;
+    /* Adjust the maximum height as needed */
+    border-radius: 8px;
+    margin-right: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toptwo-content {
+    flex: 1;
+    margin-top: 10px;
+    /* Provide spacing between image and content */
+}
+
+.toptwo-content h2 {
+    font-size: 24px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.toptwo-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.toptwo-content ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+    font-size: 16px;
+}
+
+.toptwo-content ul li i {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    color: #43b8ff;
+}
+
+@media (max-width: 768px) {
+    .toptwo {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .toptwo img {
+        max-width: 100%;
+        max-height: none;
+        margin: 0 auto 20px;
+    }
+
+    .toptwo-content {
+        margin-top: 0;
+    }
+}
+
+.flex-container {
+    display: flex;
+    align-items: stretch;
+    /* Ensure both sections have equal height */
+    justify-content: space-between;
+    /* Adjust as needed */
+    align-items: flex-start;
+    /* Adjust as needed */
+    flex-wrap: wrap;
+    /* Add a margin to space out the elements */
+    margin: 20px -10px;
+    /* Adjust as needed */
+}
+
+.toptwo,
+.services-tab-view {
+    /* flex-basis: calc(50% - 20px); Adjust width and margin as needed */
+    margin: 10px;
+    /* Adjust as needed */
+    flex-grow: 1;
+    /* Allow both sections to grow to fill available height */
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .flex-container {
+        justify-content: flex-start;
+    }
+
+    .toptwo,
+    .services-tab-view {
+        flex-basis: 100%;
+    }
+
+}
+
+
+/*============= services-tab-view css ==========*/
+
+.services-tab-view {
+    flex-basis: 30%;
+    /* Adjust width as needed */
+    overflow: auto;
+    /* Enable scrolling for overflow */
+    display: inline-block;
+    width: fit-content;
+    /* Adjust the width as needed */
+    background-color: #f0f0f0;
+    padding: 15px 15px 30px 0px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    /* Remove the margin-left */
+    height: fit-content;
+    margin-right: 30px;
+    flex-basis: 100%; /* Change to occupy full width on smaller screens */
+    border-radius: 4%;
+}
+
+.tab-option {
+    display: block;
+    padding: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    /* Add a border to the bottom */
+    height: calc(100% - 40px); /* Adjust the height of the colored strip */
+    border-bottom: none; /* Remove border-bottom for a cleaner look */
+
+
+    
+}
+
+.tab-option::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 10px;
+    background-color: teal;
+    /* background-color: #3498db; */
+    /* Grey color */
+    opacity: 0;
+    transition: opacity 0.3s, background-color 0.3s;
+    /* Add background-color transition */
+}
+
+.tab-option:hover {
+    background-color: #e0e0e0;
+}
+
+.tab-option:hover::before {
+    opacity: 1;
+}
+
+.tab-option.active {
+    background-color: #e0e0e0;
+}
+
+.tab-option.active::before {
+    opacity: 1;
+}
+
+.services-tab-view a {
+    text-decoration: none;
+}
+
+.services-tab-view li {
+    list-style: none;
+}
+
+@media (min-width: 768px) {
+    .services-tab-view {
+        flex-basis: 30%; /* Restore width on larger screens */
+    }
+
+    .tab-option {
+        border-bottom: 1px solid #ccc; /* Add back the border for larger screens */
+    }
+}
+
+
+
+/* ---------------top three -----------------------  */
+
+    /* styles.css */
+
+    .topthree {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: #f9f9f9;
+        padding: 30px;
+        margin: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .topthree img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+    .topthree img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1; /* Set a fixed aspect ratio of 1:1 (square) */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .section-header p {
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        color: #666;
+        line-height: 1.6;
+    }
+
+
+    /* ------------ topfour ---------------  */
+        /* Common styles for both desktop and mobile */
+        .topfour {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 -20px;
+            margin-left: 40px;
+        }
+    
+        .leftside_bar {
+            flex-basis: 30%;
+            overflow: auto;
+            width: 100%;
+            background-color: #f0f0f0;
+            padding: 15px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 4%;
+            margin-bottom: 20px; /* Add spacing between divs */
+        }
+    
+        .tab-option {
+            display: block;
+            padding: 20px;
+            position: relative;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            color: #333;
+            border-bottom: 1px solid #ccc;
+        }
+    
+        /* Restyle tab-option for better mobile experience */
+        .tab-option {
+            padding: 15px 20px;
+            border-bottom: none;
+        }
+    
+        .tab-option::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 10px;
+            background-color: teal;
+            opacity: 0;
+            transition: opacity 0.3s, background-color 0.3s;
+        }
+    
+        /* Restyle hover effect for tab-option on mobile */
+        .tab-option:hover::before {
+            opacity: 0.5;
+        }
+    
+        .right-content {
+            flex-basis: 70%;
+            padding: 20px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 4%;
+            margin-left: 20px;
+            margin-right: 40px;
+        }
+    
+        .image-frame {
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4%;
+            margin: 10px;
+        }
+    
+        .image-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+        .imagerigt {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    
+        /* Media queries for responsive design */
+        @media (max-width: 767px) {
+            .topfour {
+                flex-direction: column;
+                margin: 0;
+            }
+    
+            .leftside_bar,
+            .right-content {
+                flex-basis: 100%;
+                padding: 20px;
+                margin: 20px 0;
+            }
+    
+            .tab-option {
+                padding: 15px 20px;
+            }
+        }

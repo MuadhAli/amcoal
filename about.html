@@ -482,6 +482,29 @@
         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
     </div>
 
+    <style>
+        #whatsapp-icon {
+          position: fixed;
+          bottom: 70px;
+          right: 14px;
+        }
+    
+        #whatsapp-icon img {
+          width: 50px;
+          height: 50px;
+          cursor: pointer;
+        }
+      </style>
+  <a href="javascript:void(0);" id="whatsapp-icon" onclick="redirectToWhatsApp()">
+    <img src="./whatsapp.png" alt="WhatsApp Icon">
+  </a>
+  <script>
+    function redirectToWhatsApp() {
+      // Replace 'your-whatsapp-number' with your actual WhatsApp number including country code
+      window.location.href = "https://wa.me/9611451538";
+    }
+  </script>
+
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

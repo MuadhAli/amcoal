@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp Icon</title>
+ 
+</head>
+<body>
+    <style>
+        #whatsapp-icon {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+        }
+    
+        #whatsapp-icon img {
+          width: 50px;
+          height: 50px;
+          cursor: pointer;
+        }
+      </style>
+  <a href="javascript:void(0);" id="whatsapp-icon" onclick="redirectToWhatsApp()">
+    <img src="./whatsapp.png" alt="WhatsApp Icon">
+  </a>
+  <script>
+    function redirectToWhatsApp() {
+      // Replace 'your-whatsapp-number' with your actual WhatsApp number including country code
+      window.location.href = "https://wa.me/8123946184";
+    }
+  </script>
+</body>
+</html>
